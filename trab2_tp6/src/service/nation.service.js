@@ -3,11 +3,9 @@ const { nation } = require('../model/index')
 const create = async data => {
     await nation.create(data)
 }
-
 const getAll = async () => {
     return await nation.findAll()
 }
-
 const getNationById = async Id => {
     return await nation.findAll({
         where: {
@@ -22,7 +20,6 @@ const update = async (Id, data) => {
         }
     })
 }
-
 const remove = async Id => {
     return await nation.destroy({
         where: {
