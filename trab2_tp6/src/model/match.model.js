@@ -5,11 +5,11 @@ module.exports = (sequelize, DataTypes) =>{
             primaryKey: true,
             autoIncrement: true
         },
-        nationA: DataTypes.STRING,
-        scoreNationA: DataTypes.STRING,
-        nationB: DataTypes.INTEGER,
-        scoreNationB: DataTypes.INTEGER,
-        matchDate: DataTypes.DATE,
+        nation_a: DataTypes.STRING,
+        score_nation_a: DataTypes.STRING,
+        nation_b: DataTypes.INTEGER,
+        score_nation_b: DataTypes.INTEGER,
+        match_date: DataTypes.DATE,
 
     },{
         timestamps: false,
