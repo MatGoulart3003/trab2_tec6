@@ -1,8 +1,8 @@
-const service = require('../service/nation.service')
+const service = require('../service/match.service')
 
 const create = async (req, res) => {
     await service.create(req.body)
-    res.status(201).send('Nation created successfully!')
+    res.status(201).send('Match created successfully!')
 }
 const getAll = async (req, res) => {
     const response = await service.getAll()
@@ -15,7 +15,7 @@ const getById = async (req, res) => {
 const update = async (req, res) => {
     const Id = req.params.id
     await service.update(Id, req.body)
-    res.status(200).send('Nation updated successfully!')
+    res.status(200).send('Match updated successfully!')
 }
 const remove = async (req, res) => {
     const Id = req.params.id

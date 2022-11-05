@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const controller = require('../controller/nation.controller')
+const controller = require('../controller/match.controller')
 
 router.get('/', controller.getAll)
 router.post('/', controller.create)

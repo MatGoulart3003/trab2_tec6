@@ -1,27 +1,27 @@
-const { nation } = require('../model/index')
+const { match } = require('../model/index')
 
 const create = async data => {
-    await nation.create(data)
+    await match.create(data)
 }
 const getAll = async () => {
-    return await nation.findAll()
+    return await match.findAll()
 }
-const getNationById = async Id => {
-    return await nation.findAll({
+const getMatchById = async Id => {
+    return await match.findAll({
         where: {
             id: Id
         }
     })
 }
 const update = async (Id, data) => {
-    return await nation.update(data, {
+    return await match.update(data, {
         where: {
             id: Id
         }
     })
 }
 const remove = async Id => {
-    return await nation.destroy({
+    return await match.destroy({
         where: {
             id: Id
         }
@@ -31,7 +31,7 @@ const remove = async Id => {
 module.exports = {
     create,
     getAll,
-    getNationById,
+    getMatchById,
     update,
     remove
 }
