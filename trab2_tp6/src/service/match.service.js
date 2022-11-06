@@ -5,9 +5,13 @@ const create = async data => {
     await match.create(data)
 }
 const getAll = async () => {
-    return await match.findAll()
+    return await match.findAll({
+        order: [
+            ['id', 'ASC']
+        ]
+    })
 }
-const getMatchById = async Id => {
+const getById = async Id => {
     return await match.findAll({
         where: {
             id: Id
@@ -39,7 +43,7 @@ const updateScore = async (Id, scoreNationA, scoreNationB) => {
     const changedMatch = await match.findByPk(Id)
 
     changedMatch.score_nation_a = Number(scoreNationA);
-    changedMatch.score_nation_a = Number(scoreNationB);
+    changedMatch.score_nation_b = Number(scoreNationB);
     console.log(changedMatch)
     return await changedMatch.save()
 
@@ -56,7 +60,9 @@ const remove = async Id => {
 module.exports = {
     create,
     getAll,
-    getMatchById,
+    getByNation,
+    getByDate,
+    getById,
     updateScore,
     remove
 }
