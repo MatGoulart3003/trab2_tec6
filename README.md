@@ -6,5 +6,6 @@
 
 Para clonar o repositório utilize os comandos:
 
-``` git clone
+git clone https://github.com/FabricioCruzz/TP6-T2-API-WorldCup.git
+```
 
