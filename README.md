@@ -1,5 +1,10 @@
-# trab2_tec6
-Segundo trabalho de tecnicas de programação 6
+# API DA COPA DO MUNDO 2022
 
+## Instruções da aplicação:
 
-Teste de COmmit com readme
+### Baixando o projeto localmente:
+
+Para clonar o repositório utilize os comandos:
+
+git clone https://github.com/MatGoulart3003/trab2_tec6.git
+
