@@ -35,8 +35,53 @@ Com o docker, você terá acesso à mesma imagem q utilizei em minha aplicação
 
 Os Endpoints da API são:
 
-``` http://localhost:8087/api/v1/match
+### GETS
 ```
+http://localhost:8087/api/v1/match
+```
+Para get padrão
+```
+http://localhost:8087/api/v1/match/:id
+```
+Para get por ID de match
+```
+http://localhost:8087/api/v1/match/nation/:nation
+```
+Para get por Seleção
+```
+http://localhost:8087/api/v1/match/date/:date
+```
+Para get por Data (utilize a data no formato "YYYY-MM-DD")
+
+### POST
+```
+http://localhost:8087/api/v1/match
+```
+### BODY DA REQUISIÇÃO
+```
+ {
+        "id": NUMBER,
+        "nation_a": STRING,
+        "score_nation_a": NUMBER,
+        "nation_b": STRING,
+        "score_nation_b": NUMBER,
+        "match_date": STRING
+    }
+```
+(Utilize a data no formato "YYYY-MM-DD")
+
+### PUT
+```
+http://localhost:8087/api/v1/match/:id/:scoreNationA/:scoreNationB
+```
+Para fazer mudanças no Placar do jogo, utilize o ID da partida, quantos gols a Seleção A fez e quantos gols a Seleção B fez no endpoint
+
+### DELETE
+```
+http://localhost:8087/api/v1/match/:id
+```
+Para excluir o registro de jogo utilize o ID do mesmo
+
 
 
 
