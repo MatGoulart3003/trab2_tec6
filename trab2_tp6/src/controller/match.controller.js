@@ -12,9 +12,11 @@ const getById = async (req, res) => {
     const Id = parseInt(req.params.id, 10)
     res.send(await service.getById(Id))
 }
-const update = async (req, res) => {
-    const Id = req.params.id
-    await service.update(Id, req.body)
+const updateScore = async (req, res) => {
+    const id = req.params.id
+    const scoreNationA =  req.params.scoreNationA
+    const scoreNationB = req.params.scoreNationB
+    await service.updateScore(id , scoreNationA,scoreNationB)
     res.status(200).send('Match updated successfully!')
 }
 const remove = async (req, res) => {
@@ -27,6 +29,6 @@ module.exports = {
     create,
     getAll,
     getById,
-    update,
+    updateScore,
     remove
 }
