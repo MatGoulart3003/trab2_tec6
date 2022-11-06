@@ -13,7 +13,7 @@ const getByNation = async (req, res) => {
     res.send(await service.getByNation(nation))
 }
 const getByDate = async (req, res) => {
-    const date =  req.params.date
+    const date =  String(req.params.date)
     res.send(await service.getByDate(date))
 }
 const getById = async (req, res) => {

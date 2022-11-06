@@ -33,7 +33,7 @@ const getByNation = async nation => {
 const getByDate = async date => {
     return await match.findAll({
         where: {
-            data: date
+            match_date: date
         }
     })
 }
