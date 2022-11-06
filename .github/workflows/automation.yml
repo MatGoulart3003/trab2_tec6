@@ -1,10 +1,6 @@
-name: Docker Image CI
+name:  Dockerize Node.js application
 
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+on: push
 
 jobs:
 
