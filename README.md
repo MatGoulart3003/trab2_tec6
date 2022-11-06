@@ -5,7 +5,7 @@
 ### Baixando o projeto localmente:
 
 Para clonar o repositório utilize os comandos:
-
-git clone https://github.com/FabricioCruzz/TP6-T2-API-WorldCup.git
 ```
+git clone https://github.com/FabricioCruzz/TP6-T2-API-WorldCup.git
+
 
