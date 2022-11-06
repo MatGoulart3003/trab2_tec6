@@ -14,7 +14,7 @@ jobs:
     steps:
     
       - name: Check out de repo
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
       
       - name: Publish to Docker hub
         uses: docker/build-push-action@v1
