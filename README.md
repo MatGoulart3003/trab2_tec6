@@ -27,7 +27,9 @@ Porem a aplicação não rodará com o banco de dados e quebrará se voce quiser
 
 ## Baixando imagem Docker Hub e imagem DOCKER do projeto:
 
-Você precisará baixar o Docker em sua maquina, depois de instalado use o comando ```docker push matgoulart1996/trab2_tp6-api:tagname ``` onde tagname é a tag das atualizações feitas pelo docker Hub utilize sempre a mais atual
+Você precisará baixar o Docker em sua maquina, depois de instalado use o comando ```docker pull matgoulart1996/trab2_tp6-api:tagname ``` onde tagname é a tag das atualizações feitas pelo docker Hub utilize sempre a mais atual
+
+[Clique aqui para visualizar o repositório no Docker Hub](https://hub.docker.com/repository/docker/matgoulart1996/trab2_tp6-api)
 
 Com o docker, você terá acesso à mesma imagem q utilizei em minha aplicação, não tendo problemas com conflito de versões tanto do Node.js, ou do Postgres q estou usando no projeto, com o docker instalado utilize o comando ```docker-compose up``` que sejam baixadas os containers, e seja criado a tabela para manipulação dos dados, e inserts default para população da tabela
 
